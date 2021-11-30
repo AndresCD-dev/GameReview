@@ -4,7 +4,6 @@ source "https://rubygems.org"
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
 
-
 # A fast and simple web server
 # https://github.com/macournoyer/thin
 gem "thin", "~> 1.8"
@@ -21,6 +20,7 @@ gem "rack-cors", "~> 1.1"
 # https://guides.rubyonrails.org/active_record_basics.html
 gem "activerecord", "~> 6.1"
 
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 # Configures common Rake tasks for working with Active Record
 # https://github.com/sinatra-activerecord/sinatra-activerecord
 gem "sinatra-activerecord", "~> 2.0"

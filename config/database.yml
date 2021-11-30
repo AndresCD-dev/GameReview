@@ -5,7 +5,8 @@ default: &default
 
 development:
   <<: *default
-  database: meetup_clone_dev
+  adapter: sqlite3
+  database: db/development.sqlite3
 
 test:
   <<: *default
