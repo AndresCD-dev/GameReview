@@ -5,11 +5,11 @@ default: &default
 
 development:
   <<: *default
-  database: GameReview_dev
+  database: meetup_clone_dev
 
 test:
   <<: *default
-  database: GameReview_test
+  database: meetup_clone_test
 
 production:
   <<: *default
