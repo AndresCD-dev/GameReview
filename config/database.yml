@@ -1,16 +1,16 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
 development:
-  <<: *default
-  adapter: sqlite3
-  database: db/development.sqlite3
-
+  adapter: postgresql
+  database: my_database_development
+  pool: 5
+  timeout: 5000
 test:
-  <<: *default
-  database: meetup_clone_test
+  adapter: postgresql
+  database: my_database_test
+  pool: 5
+  timeout: 5000
 
 production:
-  <<: *default
+  adapter: postgresql
+  database: my_database_production
+  pool: 5
+  timeout: 5000
